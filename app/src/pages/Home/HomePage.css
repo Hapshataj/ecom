@@ -1,0 +1,208 @@
+/* Homepage banner */
+.carousel-item {
+  width: 100vw;
+  position: relative;
+}
+
+.carousel-background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: color;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0.7;
+  position: relative;
+  overflow: hidden;
+  height: 60vh; 
+}
+
+.banner-card {
+  text-align: center;
+  background: none;
+
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}.btn-outline-dark{
+  background: #000;
+  color: white;
+  padding:10px 10px 10px 10px;
+}
+/* Best Sellers and Featured Products containers */
+
+.best-seller-card,
+.featured-card {
+  border: none;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  max-width: 100%; 
+  margin: 0.5rem;
+}
+@media (max-width: 768px) {
+  .banner-card .btn-dark {
+    width: 70%; 
+  }
+}
+/* Best Sellers Container */
+
+
+.home-title {
+  font-size: 2rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-variant: small-caps;
+  margin-bottom: 1rem;
+  color: #333; /* Change the color to a darker shade */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+  letter-spacing: 1px; /* Increase letter spacing for better readability */
+  text-align: center; /* Center align the text */
+  text-transform: uppercase; /* Convert text to uppercase */
+}
+.card-title{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size:2rem;
+  color: rgba(6, 8, 8, 0.741);
+  font-weight: 300px;
+  font-style: oblique;
+}
+
+.card-text{
+  font-size: 1rem;
+}
+.best-sellers-container {
+  padding:1rem;
+  max-width: 100vw; 
+  margin: 0 auto; 
+  align-items: center;
+  justify-content: center;
+  
+}
+
+/* Best Seller Card */
+.best-seller-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive grid layout */
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.best-seller-card {
+  border: none;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  max-width: 350px; 
+ 
+  align-items: center;
+}
+.best-seller-card .card-body{
+  height:min-content;
+  letter-spacing: 1px;
+}
+
+.best-seller-card:hover,
+.featured-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.best-seller-card img {
+ width: 200px;
+ height: 300px;
+ object-fit:cover;
+ margin-top: 10px;
+ border-radius:5%;
+ cursor: pointer;
+ transition: transform 0.3s ease;
+}
+.card img:hover{
+  transform: scale(1.1);}
+
+.best-seller-card .card-title,
+.featured-card .card-title {
+  font-size: 1.5rem;
+}
+.best-seller-card .card-text:last-child,
+.featured-card .card-text:last-child {
+  margin-bottom: 0;
+}
+
+.featured-card {
+  border: none;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  width: 100%; 
+  max-width: 250px; 
+  margin: 0 20px; 
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+  background-size:200px;
+  justify-content: space-between;
+}
+
+.featured-card .product-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding-top:25%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-top: 1px solid #ccc;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.featured-card:hover .product-details {
+  opacity: 1;
+}
+
+.featured-card .card-title {
+  margin-top: 20px; 
+  font-size: 1rem; 
+}
+
+.featured-card .card-text {
+  font-size: 0.8rem;
+}
+
+.featured-card .btn-dark {
+  padding: 5px 10px; 
+  font-size: 0.8rem; 
+}
+
+.btn-dark {
+  background-color:black;
+  color: #fff;
+  border: none;
+  padding:10px 10px;
+  font-size:12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.btn-dark:hover {
+  filter: brightness(90%);
+}
+
+.btn-dark .fas {
+  color: #fff;
+}
+
+

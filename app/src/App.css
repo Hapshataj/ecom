@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Pagenot found*/
+/* Pagenotfound.css */
+.pnf {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .pnf-title {
+    font-size: 8rem;
+    color: #333;
+  }
+  
+  .pnf-heading {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .pnf-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pnf-btn:hover {
+    background-color: #222; /* Darken button color on hover */
+  }
+  
+
+  /*Categories product page css*/
+  /* CategoryProductStyles.css */
+
+@media (min-width: 576px) {
+    .category .row {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+  }

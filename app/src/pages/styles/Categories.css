@@ -1,0 +1,64 @@
+/* Categories.css */
+
+.category-card {
+  background-color: #f8f9fa; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  gap: 20px;
+  max-width: 250px; 
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .category-card {
+    max-width: fit-content; 
+  }
+}
+
+  
+  .category {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr)); 
+    justify-content: center;
+    align-items: center;
+    margin-left:5%;
+  }
+  
+  .category-card:hover {
+    background-color: rgb(198, 198, 198);
+    transition: background-color 0.3s ease;
+  }
+  
+  .cat-btn {
+    display: block;
+    top:50;
+    text-align: center;
+    padding: 10px;
+    color: black; /* Black text color */
+    border: none;
+    border-radius: 5px;
+    width: 100% ;
+    height: 100%;
+  }
+  
+.allproduct-card{
+  width:18rem;
+  padding-top: 20px;
+  align-items: center;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.allproduct-card img{
+  height:250px;
+  width:180px;
+  border-radius:5%;
+  object-fit: cover;
+ 
+}
+.allproduct-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+}
